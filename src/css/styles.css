@@ -1,0 +1,61 @@
+/**
+  |============================
+  | include css partials with
+  | default @import url()
+  |============================
+*/
+@import url('./reset.css');
+@import url('./vite-promo.css');
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./about_us.css');
+@import url('./price.css');
+@import url('./our_products.css');
+@import url('./bestsellers.css');
+@import url('./clients_reviews.css');
+@import url('./subscription.css');
+@import url('./footer.css');
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #0a224a;
+  background-color: #fff;
+}
+section {
+  scroll-margin-top: 88px;
+}
+
+:root {
+  --blue-font: #0a224a;
+  --background_1: #7a7a7a;
+  --background_2: #b6b6b6;
+  --background_3: #d9d9d9;
+  --light-blue: #f7faff;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 375px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-right: auto;
+  margin-left: auto;
+  /* outline: 2px dashed green; */
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 0 60px;
+    max-width: 1440px;
+  }
+}
+

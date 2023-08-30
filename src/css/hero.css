@@ -1,0 +1,123 @@
+.hero {
+  background-repeat: no-repeat;
+  background-position: top;
+  max-width: 375px;
+  min-height: 717px;
+  margin: 0 auto;
+  background-image: url(/img/hero/hero-mobile.jpg);
+  background-size: auto 717px;
+}
+.hero .container {
+  padding-top: 140px;
+}
+.hero-title {
+  margin-bottom: 14px;
+  color: var(--blue-font, #0a224a);
+  font-family: Playfair Display;
+  font-size: 28px;
+  width: 286px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+.hero-text {
+  color: var(--blue-font, #0a224a);
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 28px;
+}
+.hero-btn {
+  display: flex;
+  width: 224px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  background: var(--blue-font, #0a224a);
+  color: var(--white, #fff);
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-btn:focus,
+.hero-btn:hover {
+  background-color: #061835;
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .hero .container {
+    position: relative;
+  }
+  .hero-text-block {
+    position: absolute;
+    top: 562px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 100%;
+    background: none;
+    padding-top: 64px;
+    padding-bottom: 266px;
+    height: 100%;
+  }
+  .hero .container {
+    background-repeat: no-repeat;
+    padding-top: 0;
+    height: 531px;
+    background-image: url(../img/hero/hero-tablet1.jpg),
+      url(../img/hero/hero-tablet2.jpg);
+    background-position: 32px bottom, 372px bottom;
+    background-size: 308px 329px, 367px 100%;
+  }
+  .hero-title {
+    width: 648px;
+    font-size: 50px;
+  }
+  .hero-text {
+    width: 312px;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+  .hero-btn {
+    height: 50px;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .hero {
+    max-width: 100%;
+    min-height: 0;
+    height: 100%;
+    padding-bottom: 100px;
+  }
+  .hero .container {
+    display: flex;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-image: url(/img/hero/hero-desktop1.jpg),
+      url(/img/hero/hero-desktop2.jpg), url(/img/hero/hero-desktop3.jpg);
+    background-position: 60px bottom, 395px bottom, 1068px top;
+    background-size: 310px 329px, 648px 530px, 312px 337px;
+  }
+  .hero-text-block {
+    align-self: flex-end;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero .container {
+    background-image: url(/img/hero/hero-tablet1-2x.jpg),
+      url(/img/hero/hero-tablet2-2x.jpg);
+  }
+}
+@media screen and (min-width: 1440px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 1440px) and (min-resolution: 192dpi),
+  screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .hero .container {
+    background-image: url(/img/hero/hero-desktop1-2x.jpg),
+      url(/img/hero/hero-desktop2-2x.jpg), url(../img/hero/hero-desktop3-2x.jpg);
+  }
+}
